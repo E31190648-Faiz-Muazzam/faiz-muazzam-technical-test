@@ -16,9 +16,8 @@
 <body>
 
     <main class="main wrapper">
-
         <header class="header">
-            <nav class="navbar navbar-expand-lg">
+            <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container con-1920">
                     <div class="nav-left">
                         <a class="navbar-brand" href="#">
@@ -26,16 +25,16 @@
                         </a>
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" href="#">Home</a>
+                                <a class="nav-link" href="#">Our team</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                                <a class="nav-link" href="#">Tokens</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                                <a class="nav-link" href="#">Connect wallet</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
+                                <a class="nav-link" href="#">Lightpaper</a>
                             </li>
                         </ul>
                     </div>
@@ -46,7 +45,7 @@
                                 <a class="nav-link" href="#">Sign Up</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Sign In</a>
+                                <a class="nav-link active" href="#">Sign In</a>
                             </li>
                         </ul>
                     </div>
@@ -56,12 +55,19 @@
 
         <div class="site-home">
             <section class="section-slider">
-                <div id="slider-banner" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="bg-overflow-slider">
+                    <img src="./asset/image/desktop/bg-overflow-slider.png" alt="bg-overflow-slider"
+                        class="img img-fluid">
+                </div>
+                <div id="slider-banner" class="carousel slide carousel-fade" data-bs-ride="carousel"
+                    data-bs-custom-class="beautifier">
                     <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#slider-banner" data-bs-slide-to="0" class="active"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#slider-banner" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
+                        <div class="container">
+                            <button type="button" data-bs-target="#slider-banner" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#slider-banner" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
@@ -71,26 +77,30 @@
                             </div>
                             <div class="view-caption">
                                 <div class="container">
-                                    <div class="intro">
-                                        <span>At Tokners we are</span>
-                                    </div>
-                                    <div class="title">
-                                        <h2>
-                                            Reimagining social media through the power of the blockchain.
-                                        </h2>
-                                    </div>
-                                    <div class="desc">
-                                        <p>
-                                            We are creating social media 3.0 with influencers, celebrities and creators
-                                            being able to launch their own digital currency by simply creating a profile
-                                            with media content posted as Non fungible Tokens that can be owned and
-                                            traded on the Tknrs network
-                                        </p>
-                                    </div>
-                                    <div class="link">
-                                        <a href="#" class="btn btn-theme">
-                                            Learn More
-                                        </a>
+                                    <div class="text-caption item-1">
+                                        <div class="intro">
+                                            <span>At Tokners we are</span>
+                                        </div>
+                                        <div class="title">
+                                            <h2>
+                                                Reimagining social media through the power of the blockchain.
+                                            </h2>
+                                        </div>
+                                        <div class="desc">
+                                            <p>
+                                                We are creating social media 3.0 with influencers, celebrities and
+                                                creators
+                                                being able to launch their own digital currency by simply creating a
+                                                profile
+                                                with media content posted as Non fungible Tokens that can be owned and
+                                                traded on the Tknrs network
+                                            </p>
+                                        </div>
+                                        <div class="link">
+                                            <a href="#" class="btn btn-theme">
+                                                Learn More
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -102,215 +112,289 @@
                             </div>
                             <div class="view-caption">
                                 <div class="container">
-                                    <div class="intro">
-                                        <span>At Tokners we are</span>
-                                    </div>
-                                    <div class="title">
-                                        <h2>
-                                            Stand Out
-                                            from The Crowd.
-                                        </h2>
-                                    </div>
-                                    <div class="desc">
-                                        <p>
-                                            We are creating social media 3.0 with influencers, celebrities and creators
-                                            being able to launch their own digital currency by simply creating a profile
-                                            with media content posted as Non fungible Tokens that can be owned and
-                                            traded on the Tknrs network
-                                        </p>
-                                    </div>
-                                    <div class="link">
-                                        <a href="#" class="btn btn-theme">
-                                            Learn More
-                                        </a>
+                                    <div class="text-caption item-2">
+                                        <div class="intro">
+                                            <span>At Tokners we are</span>
+                                        </div>
+                                        <div class="title">
+                                            <h2>
+                                                Stand Out
+                                                from The Crowd.
+                                            </h2>
+                                        </div>
+                                        <div class="desc">
+                                            <p>
+                                                Agency is a full-service agency, busy designing and building beautiful
+                                                digital products, brands, and experiences.
+                                            </p>
+                                        </div>
+                                        <div class="link">
+                                            <a href="#" class="btn btn-theme">
+                                                Learn More
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                </div>
             </section>
 
             <section class="section-home-1">
-                <div class="view-title">
+                <div class="temp-title">
                     <div class="container con-1920">
                         <img src="./asset/image/desktop/line-design.png" alt="Line Tokners" class="img img-fluid">
                         <div class="view-title">
-                            <h1>We Make Designs that Lead and Inspire.</h1>
+                            <h1>We Make Designs that Lead <br> and Inspire.</h1>
                         </div>
                     </div>
                 </div>
 
                 <div class="view-slide">
-                    <div id="slider-banner-about" class="carousel carousel-fade slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#slider-banner-about" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#slider-banner-about" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#slider-banner-about" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#slider-banner-about" data-bs-slide-to="3"
-                                aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#slider-banner-about" data-bs-slide-to="4"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./asset/image/desktop/banner-design-1.png" class="img img-fluid"
-                                    alt="Image Banner About">
-                                <div class="view-caption">
-                                    <div class="container box-caption">
-                                        <div class="content-text">
-                                            <div class="title">
-                                                <h3></h3>
-                                            </div>
-                                            <div class="desc">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                                                    porta
-                                                    sodales leo ibulum. Nullam vel posuere nisi. Donec in lobortis
-                                                    arcu.
-                                                </p>
-                                            </div>
-                                            <div class="link">
-                                                <a href="#" class="btn btn-theme c-yellow">
-                                                    Learn More
-                                                </a>
-                                            </div>
+                    <div class="container con-1920">
+                        <div id="slider-banner-about" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#slider-banner-about" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1">
+                                    <div class="view-inside-indicator">
+                                        <div class="separator"></div>
+                                        <div class="info-text">
+                                            <span>2018</span>
                                         </div>
-                                        <div class="content-number">
-                                            <div class="view-num">
-                                                <h3>28</h3>
-                                                <span>Lorem Ipsum</span>
+                                        <div class="view-custom-point">
+                                            <img src="./asset/image/desktop/point line.png" alt="point line"
+                                                class="img img-fluid">
+                                        </div>
+                                    </div>
+
+                                </button>
+                                <button type="button" data-bs-target="#slider-banner-about" data-bs-slide-to="1"
+                                    aria-label="Slide 2">
+                                    <div class="view-inside-indicator">
+                                        <div class="separator"></div>
+                                        <div class="info-text">
+                                            <span>2019</span>
+                                        </div>
+                                        <div class="view-custom-point">
+                                            <img src="./asset/image/desktop/point line.png" alt="point line"
+                                                class="img img-fluid">
+                                        </div>
+                                    </div>
+                                </button>
+                                <button type="button" data-bs-target="#slider-banner-about" data-bs-slide-to="2"
+                                    aria-label="Slide 3">
+                                    <div class="view-inside-indicator">
+                                        <div class="separator"></div>
+                                        <div class="info-text">
+                                            <span>2020</span>
+                                        </div>
+                                        <div class="view-custom-point">
+                                            <img src="./asset/image/desktop/point line.png" alt="point line"
+                                                class="img img-fluid">
+                                        </div>
+                                    </div>
+                                </button>
+                                <button type="button" data-bs-target="#slider-banner-about" data-bs-slide-to="3"
+                                    aria-label="Slide 4">
+                                    <div class="view-inside-indicator">
+                                        <div class="separator"></div>
+                                        <div class="info-text">
+                                            <span>2021</span>
+                                        </div>
+                                        <div class="view-custom-point">
+                                            <img src="./asset/image/desktop/point line.png" alt="point line"
+                                                class="img img-fluid">
+                                        </div>
+                                    </div>
+                                </button>
+                                <button type="button" data-bs-target="#slider-banner-about" data-bs-slide-to="4"
+                                    aria-label="Slide 5">
+                                    <div class="view-inside-indicator">
+                                        <div class="separator"></div>
+                                        <div class="info-text">
+                                            <span>2022</span>
+                                        </div>
+                                        <div class="view-custom-point">
+                                            <img src="./asset/image/desktop/point line.png" alt="point line"
+                                                class="img img-fluid">
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="pict-banner">
+                                        <img src="./asset/image/desktop/banner-design-1.png" class="img img-fluid"
+                                            alt="Image Banner About">
+                                    </div>
+                                    <div class="view-caption">
+                                        <div class="container con-1920 box-caption">
+                                            <div class="content-text">
+
+                                                <div class="title">
+                                                    <div class="separator"></div>
+                                                    <h3>Lorem ipsum dolor sit amet, consectetur cing elit.</h3>
+                                                </div>
+                                                <div class="desc">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                                                        porta
+                                                        sodales leo ibulum. Nullam vel posuere nisi. Donec in lobortis
+                                                        arcu.
+                                                    </p>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="#" class="btn btn-theme c-yellow">
+                                                        Learn More
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="content-number">
+                                                <div class="view-num">
+                                                    <h3>28</h3>
+                                                    <span>Lorem Ipsum</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./asset/image/desktop/banner-design-2.png" class="img img-fluid"
-                                    alt="Image Banner About">
-                                <div class="view-caption">
-                                    <div class="container box-caption">
-                                        <div class="content-text">
-                                            <div class="title">
-                                                <h3></h3>
+                                <div class="carousel-item">
+                                    <div class="pict-banner">
+                                        <img src="./asset/image/desktop/banner-design-2.png" class="img img-fluid"
+                                            alt="Image Banner About">
+                                    </div>
+                                    <div class="view-caption">
+                                        <div class="container con-1920 box-caption">
+                                            <div class="content-text">
+                                                <div class="title">
+                                                    <div class="separator"></div>
+                                                    <h3>Lorem ipsum dolor sit amet, consectetur cing elit.</h3>
+                                                </div>
+                                                <div class="desc">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                                                        porta
+                                                        sodales leo ibulum. Nullam vel posuere nisi. Donec in lobortis
+                                                        arcu.
+                                                    </p>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="#" class="btn btn-theme c-yellow">
+                                                        Learn More
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div class="desc">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                                                    porta
-                                                    sodales leo ibulum. Nullam vel posuere nisi. Donec in lobortis
-                                                    arcu.
-                                                </p>
-                                            </div>
-                                            <div class="link">
-                                                <a href="#" class="btn btn-theme c-yellow">
-                                                    Learn More
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="content-number">
-                                            <div class="view-num">
-                                                <h3>28</h3>
-                                                <span>Lorem Ipsum</span>
+                                            <div class="content-number">
+                                                <div class="view-num">
+                                                    <h3>28</h3>
+                                                    <span>Lorem Ipsum</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./asset/image/desktop/banner-design-3.png" class="img img-fluid"
-                                    alt="Image Banner About">
-                                <div class="view-caption">
-                                    <div class="container box-caption">
-                                        <div class="content-text">
-                                            <div class="title">
-                                                <h3></h3>
+                                <div class="carousel-item">
+                                    <div class="pict-banner">
+                                        <img src="./asset/image/desktop/banner-design-3.png" class="img img-fluid"
+                                            alt="Image Banner About">
+                                    </div>
+                                    <div class="view-caption">
+                                        <div class="container con-1920 box-caption">
+                                            <div class="content-text">
+                                                <div class="title">
+                                                    <div class="separator"></div>
+                                                    <h3>Lorem ipsum dolor sit amet, consectetur cing elit.</h3>
+                                                </div>
+                                                <div class="desc">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                                                        porta
+                                                        sodales leo ibulum. Nullam vel posuere nisi. Donec in lobortis
+                                                        arcu.
+                                                    </p>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="#" class="btn btn-theme c-yellow">
+                                                        Learn More
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div class="desc">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                                                    porta
-                                                    sodales leo ibulum. Nullam vel posuere nisi. Donec in lobortis
-                                                    arcu.
-                                                </p>
-                                            </div>
-                                            <div class="link">
-                                                <a href="#" class="btn btn-theme c-yellow">
-                                                    Learn More
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="content-number">
-                                            <div class="view-num">
-                                                <h3>28</h3>
-                                                <span>Lorem Ipsum</span>
+                                            <div class="content-number">
+                                                <div class="view-num">
+                                                    <h3>28</h3>
+                                                    <span>Lorem Ipsum</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./asset/image/desktop/banner-design-4.png" class="img img-fluid"
-                                    alt="Image Banner About">
-                                <div class="view-caption">
-                                    <div class="container box-caption">
-                                        <div class="content-text">
-                                            <div class="title">
-                                                <h3></h3>
+                                <div class="carousel-item">
+                                    <div class="pict-banner">
+                                        <img src="./asset/image/desktop/banner-design-4.png" class="img img-fluid"
+                                            alt="Image Banner About">
+                                    </div>
+                                    <div class="view-caption">
+                                        <div class="container con-1920 box-caption">
+                                            <div class="content-text">
+                                                <div class="title">
+                                                    <div class="separator"></div>
+                                                    <h3>Lorem ipsum dolor sit amet, consectetur cing elit.</h3>
+                                                </div>
+                                                <div class="desc">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                                                        porta
+                                                        sodales leo ibulum. Nullam vel posuere nisi. Donec in lobortis
+                                                        arcu.
+                                                    </p>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="#" class="btn btn-theme c-yellow">
+                                                        Learn More
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div class="desc">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                                                    porta
-                                                    sodales leo ibulum. Nullam vel posuere nisi. Donec in lobortis
-                                                    arcu.
-                                                </p>
-                                            </div>
-                                            <div class="link">
-                                                <a href="#" class="btn btn-theme c-yellow">
-                                                    Learn More
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="content-number">
-                                            <div class="view-num">
-                                                <h3>28</h3>
-                                                <span>Lorem Ipsum</span>
+                                            <div class="content-number">
+                                                <div class="view-num">
+                                                    <h3>28</h3>
+                                                    <span>Lorem Ipsum</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./asset/image/desktop/banner-design-5.png" class="img img-fluid"
-                                    alt="Image Banner About">
-                                <div class="view-caption">
-                                    <div class="container box-caption">
-                                        <div class="content-text">
-                                            <div class="title">
-                                                <h3></h3>
+                                <div class="carousel-item">
+                                    <div class="pict-banner">
+                                        <img src="./asset/image/desktop/banner-design-5.png" class="img img-fluid"
+                                            alt="Image Banner About">
+                                    </div>
+                                    <div class="view-caption">
+                                        <div class="container con-1920 box-caption">
+                                            <div class="content-text">
+                                                <div class="title">
+                                                    <div class="separator"></div>
+                                                    <h3>Lorem ipsum dolor sit amet, consectetur cing elit.</h3>
+                                                </div>
+                                                <div class="desc">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                                                        porta
+                                                        sodales leo ibulum. Nullam vel posuere nisi. Donec in lobortis
+                                                        arcu.
+                                                    </p>
+                                                </div>
+                                                <div class="link">
+                                                    <a href="#" class="btn btn-theme c-yellow">
+                                                        Learn More
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div class="desc">
-                                                <p>
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
-                                                    porta
-                                                    sodales leo ibulum. Nullam vel posuere nisi. Donec in lobortis
-                                                    arcu.
-                                                </p>
-                                            </div>
-                                            <div class="link">
-                                                <a href="#" class="btn btn-theme c-yellow">
-                                                    Learn More
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="content-number">
-                                            <div class="view-num">
-                                                <h3>28</h3>
-                                                <span>Lorem Ipsum</span>
+                                            <div class="content-number">
+                                                <div class="view-num">
+                                                    <h3>28</h3>
+                                                    <span>Lorem Ipsum</span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -374,47 +458,63 @@
 
             <section class="section-home-3">
                 <div class="view-content">
-                    <div class="item-content content-right">
-                        <img src="./asset/image/desktop/banner-different-1.png" alt="">
-                    </div>
-                    <div class="item-content content-right">
-                        <img src="./asset/image/desktop/banner-different-white-1.png" alt="">
-
-                        <div class="view-caption">
-                            <div class="title">
-                                <h3>What makes us different?</h3>
-                            </div>
-                            <div class="sub-title">
-                                <h6>We would only launch tokens with the express permission of the creators. </h6>
-                            </div>
-                            <div class="desc">
-                                <p>
-                                    There are several thousand celebrities and creators on twitter, tiktok, Instagram
-                                    and YouTube with followings in the millions who we would be actively engaging before
-                                    we go viral.
-                                </p>
-                                <p>
-                                    We would get them on our platform and they would see the opportunity to create a fan
-                                    driven digital economy where their digital content can be traded as NFTs and their
-                                    most loyal fans can have the monetary value of their creator's currency increase
-                                    significantly as they promote their digital currency across their channels while our
-                                    native token holders benefit from the Weentar popularity.
-                                </p>
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <div class="item-content content-left">
+                                <div class="pict-banner">
+                                    <img src="./asset/image/desktop/banner-different-1.png" alt="image-banner">
+                                </div>
                             </div>
                         </div>
-                        <div class="text-bg-overlay">
-                            <img src="./asset/image/desktop/bg-text-different.png" alt="" class="img img-fluid">
+                        <div class="col-md-6">
+                            <div class="item-content content-right">
+                                <div class="pict-banner">
+                                    <img src="./asset/image/desktop/banner-different-white-1.png" alt="image-banner">
+                                </div>
+
+                                <div class="view-caption">
+                                    <div class="title">
+                                        <h3>What makes us different?</h3>
+                                    </div>
+                                    <div class="sub-title">
+                                        <h6>We would only launch tokens with the express permission of the creators.
+                                        </h6>
+                                    </div>
+                                    <div class="desc">
+                                        <p>
+                                            There are several thousand celebrities and creators on twitter, tiktok,
+                                            Instagram
+                                            and YouTube with followings in the millions who we would be actively
+                                            engaging before
+                                            we go viral.
+                                        </p>
+                                        <p>
+                                            We would get them on our platform and they would see the opportunity to
+                                            create a fan
+                                            driven digital economy where their digital content can be traded as NFTs and
+                                            their
+                                            most loyal fans can have the monetary value of their creator's currency
+                                            increase
+                                            significantly as they promote their digital currency across their channels
+                                            while our
+                                            native token holders benefit from the Weentar popularity.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="text-bg-overlay">
+                                    <img src="./asset/image/desktop/bg-text-different.png" alt="" class="img img-fluid">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="section-home-4">
+                <div class="ic-shape-right">
+                    <img src="./asset/image/desktop/shape-diffetent-white.svg" alt="shape-white" class="img img-fluid">
+                </div>
                 <div class="container">
-                    <div class="ic-shape-right">
-                        <img src="./asset/image/desktop/shape-diffetent-white.svg" alt="shape-white"
-                            class="img img-fluid">
-                    </div>
                     <div class="view-content">
                         <div class="list-features">
                             <div class="row">
@@ -425,15 +525,15 @@
                                                 <img src="./asset/image/desktop/item-q1.png" alt=""
                                                     class="img img-fluid">
                                             </div>
-                                            <div class="text-icon">
+                                            <div class="text-icon color-1">
                                                 <div class="dot"></div>
                                                 <h6>2021</h6>
                                             </div>
                                         </div>
-                                        <div class="view-features">
+                                        <div class="view-features color-1">
                                             <div class="item-data">
                                                 <div class="number">
-                                                    01
+                                                    <span>01</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>Team set-up</span>
@@ -441,7 +541,7 @@
                                             </div>
                                             <div class="item-data">
                                                 <div class="number">
-                                                    02
+                                                    <span>02</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>Launch of informational website</span>
@@ -457,15 +557,15 @@
                                                 <img src="./asset/image/desktop/item-q2.png" alt=""
                                                     class="img img-fluid">
                                             </div>
-                                            <div class="text-icon">
+                                            <div class="text-icon color-2">
                                                 <div class="dot"></div>
                                                 <h6>2021</h6>
                                             </div>
                                         </div>
-                                        <div class="view-features">
+                                        <div class="view-features color-2">
                                             <div class="item-data">
                                                 <div class="number">
-                                                    01
+                                                    <span>01</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>Presale and exchange listings</span>
@@ -473,7 +573,7 @@
                                             </div>
                                             <div class="item-data">
                                                 <div class="number">
-                                                    02
+                                                    <span>02</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>Blockchain development and launch</span>
@@ -481,7 +581,9 @@
                                             </div>
                                             <div class="item-data">
                                                 <div class="number">
-                                                    03
+                                                    <span>
+                                                        03
+                                                    </span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>Launch of our MVP</span>
@@ -489,7 +591,7 @@
                                             </div>
                                             <div class="item-data">
                                                 <div class="number">
-                                                    04
+                                                    <span>04</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>Influencer agency partnerships</span>
@@ -497,7 +599,7 @@
                                             </div>
                                             <div class="item-data">
                                                 <div class="number">
-                                                    05
+                                                    <span>05</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>Marketing and promotion </span>
@@ -513,15 +615,15 @@
                                                 <img src="./asset/image/desktop/item-q3.png" alt=""
                                                     class="img img-fluid">
                                             </div>
-                                            <div class="text-icon">
+                                            <div class="text-icon color-3">
                                                 <div class="dot"></div>
                                                 <h6>2021</h6>
                                             </div>
                                         </div>
-                                        <div class="view-features">
+                                        <div class="view-features color-3">
                                             <div class="item-data">
                                                 <div class="number">
-                                                    01
+                                                    <span>01</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>Celebrity, Creator and Influencer partnerships</span>
@@ -529,7 +631,7 @@
                                             </div>
                                             <div class="item-data">
                                                 <div class="number">
-                                                    02
+                                                    <span>02</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>Expansion of creator communities on our platform</span>
@@ -537,7 +639,7 @@
                                             </div>
                                             <div class="item-data">
                                                 <div class="number">
-                                                    03
+                                                    <span>03</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>More Marketing and promotion</span>
@@ -553,15 +655,15 @@
                                                 <img src="./asset/image/desktop/item-q4.png" alt=""
                                                     class="img img-fluid">
                                             </div>
-                                            <div class="text-icon">
+                                            <div class="text-icon color-4">
                                                 <div class="dot"></div>
                                                 <h6>2021</h6>
                                             </div>
                                         </div>
-                                        <div class="view-features">
+                                        <div class="view-features color-4">
                                             <div class="item-data">
                                                 <div class="number">
-                                                    01
+                                                    <span>01</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>Mainstream partnerships</span>
@@ -569,7 +671,7 @@
                                             </div>
                                             <div class="item-data">
                                                 <div class="number">
-                                                    02
+                                                    <span>02</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>500 active creator communities</span>
@@ -577,7 +679,7 @@
                                             </div>
                                             <div class="item-data">
                                                 <div class="number">
-                                                    03
+                                                    <span>03</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>2Million active community members</span>
@@ -585,7 +687,7 @@
                                             </div>
                                             <div class="item-data">
                                                 <div class="number">
-                                                    04
+                                                    <span>04</span>
                                                 </div>
                                                 <div class="desc">
                                                     <span>More Marketing and promotion</span>
@@ -604,12 +706,13 @@
                                 </div>
                                 <div class="desc">
                                     <p>
-                                        <span>Cryptocurrency adoption is at less than 1% of the global world population
+                                        <strong>Cryptocurrency adoption is at less than 1% of the global world
+                                            population
                                             with
                                             some
                                             countries and entities actively fighting against its mass adoption and the
                                             smartest
-                                            developers and nerds holding the fort.</span>
+                                            developers and nerds holding the fort.</strong>
                                     </p>
                                     <p>
                                         Bitcoin was the first, and it has since grown to thousands of tokens launched
@@ -633,12 +736,12 @@
                                     </p>
 
                                     <p>
-                                        <span>
+                                        <strong>
                                             A new digital economy is coming. People would be just as powerful as
                                             countries and creators would be paid beyond the peanuts that conventional
                                             social media
                                             platforms can offer.
-                                        </span>
+                                        </strong>
                                     </p>
 
                                     <p>
@@ -648,7 +751,7 @@
                                 </div>
                                 <div class="quote">
                                     <div class="view-quote">
-                                        <span>"</span>
+                                        <h6>"</h6>
                                         <p>
                                             <i>
                                                 "Personalities would become the new currency, and services would be
@@ -697,14 +800,16 @@
                                 <div class="col-md-4 box-item">
                                     <div class="item-presale">
                                         <div class="pict">
-                                            <img src="./asset/image/desktop/01-bg.png" alt="" class="img img-fluid">
+                                            <div class="overflow-number">
+                                                <img src="./asset/image/desktop/01-bg.png" alt="" class="img img-fluid">
+                                            </div>
                                             <div class="ic-presale">
                                                 <img src="./asset/image/desktop/ic-presale-1.png" alt=""
                                                     class="img img-fluid">
                                             </div>
                                         </div>
                                         <div class="temp-header">
-                                            <div class="title">
+                                            <div class="title-item">
                                                 <h5>Phase One</h5>
                                             </div>
                                             <div class="date">
@@ -721,14 +826,16 @@
                                 <div class="col-md-4 box-item">
                                     <div class="item-presale">
                                         <div class="pict">
-                                            <img src="./asset/image/desktop/02-bg.png" alt="" class="img img-fluid">
+                                            <div class="overflow-number">
+                                                <img src="./asset/image/desktop/02-bg.png" alt="" class="img img-fluid">
+                                            </div>
                                             <div class="ic-presale">
                                                 <img src="./asset/image/desktop/ic-presale-2.png" alt=""
                                                     class="img img-fluid">
                                             </div>
                                         </div>
                                         <div class="temp-header">
-                                            <div class="title">
+                                            <div class="title-item">
                                                 <h5>Phase Two</h5>
                                             </div>
                                             <div class="date">
@@ -745,14 +852,16 @@
                                 <div class="col-md-4 box-item">
                                     <div class="item-presale">
                                         <div class="pict">
-                                            <img src="./asset/image/desktop/03-bg.png" alt="" class="img img-fluid">
+                                            <div class="overflow-number">
+                                                <img src="./asset/image/desktop/03-bg.png" alt="" class="img img-fluid">
+                                            </div>
                                             <div class="ic-presale">
                                                 <img src="./asset/image/desktop/ic-presale-3.png" alt=""
                                                     class="img img-fluid">
                                             </div>
                                         </div>
                                         <div class="temp-header">
-                                            <div class="title">
+                                            <div class="title-item">
                                                 <h5>Phase Three</h5>
                                             </div>
                                             <div class="date">
@@ -772,7 +881,7 @@
                 </div>
             </section>
 
-            <section class="section-home-5">
+            <section class="section-home-6">
                 <div class="container">
                     <div class="title">
                         <h3>How to buy</h3>
@@ -792,6 +901,14 @@
                             </div>
                             <div class="col-md-4 box-item">
                                 <div class="item-buy">
+                                    <div class="item-ic ic-left">
+                                        <img src="./asset/image/desktop/chevron-right-ic.png" alt="chevron-right-green"
+                                            class="img img-fluid">
+                                    </div>
+                                    <div class="item-ic ic-right">
+                                        <img src="./asset/image/desktop/chevron-right-ic-yellow.png"
+                                            alt="chevron-right-yellow" class="img img-fluid">
+                                    </div>
                                     <div class="number">
                                         <span>02</span>
                                     </div>
@@ -923,5 +1040,14 @@
 </body>
 
 <script src="./asset/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".header");
+
+        navbar.classList.toggle("scrolling", window.scrollY > 50);
+        navbar.classList.toggle("bg-scroll", window.scrollY > 200);
+    });
+</script>
 
 </html>

@@ -1,0 +1,87 @@
+// Light
+
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("../font/light/SansSerifFLF.otf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("../font/light/SansSerifFLF.otf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+// Reguker
+
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("../font/regular/SansSerifBookFLF.otf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("../font/regular/SansSerifBookFLF-Italic.otf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+// Medium
+
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("../font/medium/SansSerifFLF-Demibold.otf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("../font/medium/SansSerifFLF-DemiItalic.otf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+// Bold
+
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("../font/bold/SansSerifBldFLF.otf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "CenturyGothic";
+    src: url("../font/bold/SansSerifBldFLF-Italic.otf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+// Custom Style Text
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+p,
+span,
+a,
+small,
+label {
+    font-family: "CenturyGothic", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba($color: #dde2ff, $alpha: 0.6);
+    font-weight: 400;
+}
