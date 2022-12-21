@@ -82,6 +82,7 @@
                 right: 0;
                 .nav {
                     gap: 9px;
+                    justify-content: center;
                     .nav-item {
                         .nav-link {
                             padding: 0;
@@ -92,6 +93,11 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+
+                            @media screen and (max-width: 374px) {
+                                height: 40px;
+                                width: 40px;
+                            }
                         }
                     }
                 }
@@ -105,6 +111,9 @@
                 .view-navigation {
                     .navbar-nav {
                         gap: 40px;
+                        @media screen and (max-width: 374px) {
+                            gap: 30px;
+                        }
                         .nav-item {
                             .nav-link {
                                 font-weight: 700;
@@ -117,6 +126,11 @@
                                 padding: 0;
                                 &.active {
                                     color: #fff;
+                                }
+
+                                @media screen and (max-width: 374px) {
+                                    height: 40px;
+                                    width: 40px;
                                 }
                             }
                         }
@@ -415,7 +429,7 @@
                                         h3 {
                                             font-weight: 700;
                                             font-size: 132px;
-                                            line-height: 1.1;
+                                            line-height: 1;
                                             /* identical to box height */
                                             text-align: center;
                                             /* color/white */
@@ -554,7 +568,7 @@
                         /* or 143% */
                         color: #0f1320;
                         opacity: 0.6;
-                        margin-bottom: 30px;
+                        margin-bottom: 20px;
                     }
                 }
 
@@ -569,7 +583,7 @@
                         color: #0f1320;
 
                         opacity: 0.6;
-                        margin-bottom: 30px;
+                        margin-bottom: 20px;
                         letter-spacing: 0.2px;
                         &:last-of-type {
                             margin-bottom: 0;
@@ -907,6 +921,7 @@
 
                         .date {
                             span {
+                                font-family: "Azo Sans", sans-serif;
                                 font-weight: 500;
                                 font-size: 16px;
                                 line-height: 20px;
@@ -920,6 +935,7 @@
 
                     .temp-content {
                         h6 {
+                            font-family: "Azo Sans", sans-serif;
                             font-weight: 500;
                             font-size: 20px;
                             line-height: 20px;
@@ -931,6 +947,7 @@
                         }
 
                         p {
+                            font-family: "Azo Sans", sans-serif;
                             font-weight: 400;
                             font-size: 16px;
                             line-height: 20px;
@@ -939,6 +956,10 @@
                             color: #191b21;
                             opacity: 0.8;
                             margin-bottom: 0;
+
+                            strong {
+                                font-weight: 500;
+                            }
                         }
                     }
                 }
@@ -1104,6 +1125,7 @@
                     .list-sosmed {
                         .nav {
                             gap: 9px;
+                            justify-content: center;
                             .nav-item {
                                 .nav-link {
                                     padding: 0;
@@ -1116,6 +1138,11 @@
                                     justify-content: center;
                                     img {
                                         max-height: 14px;
+                                    }
+
+                                    @media screen and (max-width: 374px) {
+                                        height: 40px;
+                                        width: 40px;
                                     }
                                 }
                             }
