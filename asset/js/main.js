@@ -118,3 +118,25 @@ $("a.smooth-menu").on("click", function (event) {
     );
   event.preventDefault();
 });
+
+const onCaptionSlider = document.querySelector(
+  ".section-slider .carousel-item.active .view-caption"
+);
+
+const onLinkSlider = document.getElementById("link-slider");
+
+const mySlider = document.getElementById("slider-banner-desktop");
+
+let styleLinkTop = onCaptionSlider.offsetHeight + onCaptionSlider.offsetTop;
+
+onLinkSlider.style.top = `${styleLinkTop - 25}px`;
+
+mySlider.addEventListener("slid.bs.carousel", (event) => {
+  const getSliderDesc = event.target.querySelector(
+    ".section-slider .carousel-item.active .view-caption"
+  );
+
+  let styleLinkTop = getSliderDesc.offsetHeight + getSliderDesc.offsetTop;
+
+  onLinkSlider.style.top = `${styleLinkTop - 5}px`;
+});
