@@ -115,6 +115,40 @@ header.header {
             }
             .carousel-inner {
                 .carousel-item {
+                    &:nth-child(1) {
+                        .pict-banner {
+                            img {
+                                transform: translateX(150%) translateY(50%) rotate(-90deg);
+                                transition: 0.5s;
+                            }
+                        }
+                        &.active {
+                            .pict-banner {
+                                img {
+                                    transform: translateX(0) translateY(0%) rotate(0);
+                                }
+                            }
+                        }
+                    }
+
+                    @media screen and (max-width: 992px) {
+                        &:nth-child(1) {
+                            .pict-banner {
+                                img {
+                                    transform: unset;
+                                    transition: 0.5s;
+                                }
+                            }
+                            &.active {
+                                .pict-banner {
+                                    img {
+                                        transform: translateX(0) translateY(0%) rotate(0);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
                     position: relative;
                     .pict-banner {
                         text-align: end;
