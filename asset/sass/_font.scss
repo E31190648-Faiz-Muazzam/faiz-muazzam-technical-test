@@ -70,6 +70,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: "CenturyGothic";
     font-weight: 700;
     color: #ffffff;
 }
@@ -84,4 +85,18 @@ label {
     line-height: 24px;
     color: rgba($color: #dde2ff, $alpha: 0.6);
     font-weight: 400;
+}
+
+.view-mobile {
+    p,
+    span,
+    a,
+    small,
+    label {
+        font-family: "CenturyGothic", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba($color: #dde2ff, $alpha: 0.6);
+    }
 }

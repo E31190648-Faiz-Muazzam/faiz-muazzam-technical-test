@@ -61,6 +61,10 @@ header.header {
                             justify-content: center;
                             border: 2px solid #22a75d;
                             border-radius: 52px;
+                            transition: 0.3s;
+                            &:hover {
+                                background-color: #22a75d;
+                            }
                         }
                     }
                 }
@@ -143,7 +147,7 @@ header.header {
                                     font-size: 16px;
                                     line-height: 24px;
                                     /* identical to box height, or 150% */
-                                    background: linear-gradient(0deg, #2b3087 0%, #00b4ec 81.99%), #ffd100;
+                                    background: linear-gradient(0deg, #2b3087 0%, #00b4ec 81.99%);
                                     -webkit-background-clip: text;
                                     -webkit-text-fill-color: transparent;
                                     background-clip: text;
@@ -166,6 +170,10 @@ header.header {
 
                             .desc {
                                 margin-bottom: 40px;
+                                // p {
+                                //     letter-spacing: 0.5px;
+                                //     font-weight: 300;
+                                // }
                             }
                         }
                     }
@@ -373,6 +381,11 @@ header.header {
                         }
                     }
                 }
+
+                .icon {
+                    transform: translateX(-22px);
+                }
+
                 .title {
                     h3 {
                         font-weight: 700;
@@ -419,6 +432,8 @@ header.header {
 
     .section-home-3 {
         margin-top: 214px;
+        position: relative;
+        z-index: 2;
         .item-content {
             position: relative;
             .pict-banner {
@@ -480,6 +495,7 @@ header.header {
     .section-home-4 {
         position: relative;
         padding-top: 210px;
+        z-index: 2;
         .ic-shape-right {
             position: absolute;
             right: 0;
@@ -594,6 +610,8 @@ header.header {
             .box-content-text {
                 display: flex;
                 justify-content: space-between;
+                position: relative;
+                z-index: 2;
                 margin-top: 177px;
                 .box-left {
                     max-width: 645px;
@@ -662,7 +680,11 @@ header.header {
 
                             color: #ffffff;
                             border: 2px solid #22a75d;
+                            transition: 0.3s;
                             border-radius: 52px;
+                            &:hover {
+                                background-color: #22a75d;
+                            }
                         }
                     }
                 }

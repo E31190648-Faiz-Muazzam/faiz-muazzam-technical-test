@@ -1,10 +1,18 @@
 body {
     background-color: #0f1320;
+    overflow-x: hidden;
+    &.overflow-hidden-body {
+        overflow: hidden;
+    }
+}
+
+html {
+    scroll-behavior: auto !important;
 }
 
 .container {
-    padding: 0 15px;
-    max-width: 100%;
+    padding: 0 20px;
+    // max-width: 100%;
     &.con-1920 {
         @media screen and (min-width: 1575px) {
             max-width: 1920px;
@@ -13,6 +21,10 @@ body {
     }
     @media screen and (min-width: 1575px) {
         max-width: 1575px;
+        padding: 0px;
+    }
+
+    @media screen and (min-width: 992px) {
         padding: 0px;
     }
 }
@@ -26,10 +38,51 @@ body {
     font-size: 14px;
     line-height: 17px;
     text-align: center;
+    transition: 0.3s;
+    color: #fff;
+    &:hover {
+        background-color: #ffd100;
+        box-shadow: 0px 15px 25px rgba(255, 209, 0, 0.25);
+    }
     &.c-yellow {
         background-color: #ffd100;
-        background: #ffd100;
         box-shadow: 0px 15px 25px rgba(255, 209, 0, 0.25);
         border-radius: 52px;
+        color: #0f1320;
+        &:hover {
+            background-color: #22a75d;
+            color: #fff;
+            box-shadow: 0px 15px 25px rgba(34, 167, 93, 0.25);
+        }
+    }
+}
+
+.view-mobile {
+    .btn-theme {
+        padding: 15px 30px;
+        background-color: #22a75d;
+        box-shadow: 0px 15px 25px rgba(34, 167, 93, 0.25);
+        border-radius: 52px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        transition: 0.3s;
+        color: #fff;
+        &:hover {
+            background-color: #ffd100;
+            box-shadow: 0px 15px 25px rgba(255, 209, 0, 0.25);
+        }
+        &.c-yellow {
+            background-color: #ffd100;
+            box-shadow: 0px 15px 25px rgba(255, 209, 0, 0.25);
+            border-radius: 52px;
+            color: #0f1320;
+            &:hover {
+                background-color: #22a75d;
+                color: #fff;
+                box-shadow: 0px 15px 25px rgba(34, 167, 93, 0.25);
+            }
+        }
     }
 }
