@@ -1,10 +1,3 @@
-window.addEventListener("scroll", () => {
-  const navbar = document.querySelector(".header");
-
-  navbar.classList.toggle("scrolling", window.scrollY > 50);
-  navbar.classList.toggle("bg-scroll", window.scrollY > 200);
-});
-
 $(document).ready(function () {
   window.onload = () => {
     const wElement = window.innerWidth;
@@ -13,6 +6,13 @@ $(document).ready(function () {
 
     const btnReadMore = document.getElementById("button-read-more");
     const contentDesc = document.getElementById("content-desc");
+
+    window.addEventListener("scroll", () => {
+      const navbar = document.querySelector(".header");
+
+      navbar.classList.toggle("scrolling", window.scrollY > 50);
+      navbar.classList.toggle("bg-scroll", window.scrollY > 200);
+    });
 
     if (wElement > 992) {
       document.body.removeChild(vMobile);
