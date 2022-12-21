@@ -63,6 +63,45 @@ $(document).ready(function () {
         $(".header").toggleClass("scrolling bg-scroll");
       }
     });
+
+    const myCarousel = document.getElementById("slider-banner-about");
+
+    myCarousel.addEventListener("slid.bs.carousel", (event) => {
+      const getLabel = event.target
+        .querySelector(
+          ".head-slider .view-indicators .carousel-indicators .item-slider button.btn.active"
+        )
+        .getAttribute("aria-label");
+
+      document.querySelector("#btn-info-active span").innerText = getLabel;
+    });
+
+    const myCollapsible = document.getElementById("view-list-indicators");
+    myCollapsible.addEventListener("shown.bs.collapse", (event) => {
+      document.body.onclick = () => {
+        const bsCollapse = new bootstrap.Collapse("#view-list-indicators", {
+          hide: true,
+          // toggle: false,
+        });
+      };
+
+      event.target.onclick = () => {
+        // console.log("action");
+        const bsCollapse = new bootstrap.Collapse("#view-list-indicators", {
+          hide: false,
+          // toggle: false,
+        });
+      };
+    });
+
+    myCollapsible.addEventListener("hide.bs.collapse", (event) => {
+      document.body.onclick = () => {
+        const bsCollapse = new bootstrap.Collapse("#view-list-indicators", {
+          hide: true,
+          toggle: false,
+        });
+      };
+    });
   };
 
   $("a.smooth-menu").on("click", function (event) {
