@@ -11,7 +11,7 @@ $(document).ready(function () {
     const vDesktop = document.getElementById("view-desktop");
     const vMobile = document.getElementById("view-mobile");
 
-    const btnReadMore = document.getElementById("btn-read-more");
+    const btnReadMore = document.getElementById("button-read-more");
     const contentDesc = document.getElementById("content-desc");
 
     if (wElement > 992) {
@@ -73,7 +73,7 @@ $(document).ready(function () {
         )
         .getAttribute("aria-label");
 
-      document.querySelector("#btn-info-active span").innerText = getLabel;
+      document.querySelector("#button-info-active span").innerText = getLabel;
     });
 
     const myCollapsible = document.getElementById("view-list-indicators");
