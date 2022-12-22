@@ -223,6 +223,7 @@ header.header {
                 left: 0;
                 right: 0;
                 transition: 0.4s;
+                z-index: 10;
             }
         }
     }
@@ -549,6 +550,10 @@ header.header {
 
         .view-content {
             .list-features {
+                .row {
+                    --bs-gutter-x: 30px;
+                    --bs-gutter-y: 0;
+                }
                 .item-features {
                     .view-icon {
                         display: flex;
@@ -624,7 +629,7 @@ header.header {
                         .item-data {
                             display: flex;
                             gap: 20px;
-                            margin-bottom: 17px;
+                            margin-bottom: 12px;
 
                             .number {
                                 span {
@@ -778,6 +783,7 @@ header.header {
                     .item-presale {
                         background: #ffffff;
                         border-radius: 25px;
+                        padding: 0 2rem;
                         padding-top: 115px;
                         padding-bottom: 87px;
                         text-align: center;
@@ -1010,6 +1016,10 @@ footer.footer {
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
+                                transition: 0.3s;
+                                &:hover {
+                                    background-color: rgba($color: #fff, $alpha: 0.1);
+                                }
                             }
                         }
                     }
@@ -1033,8 +1043,13 @@ footer.footer {
                             justify-content: end;
                             gap: 4px;
                             opacity: 0.5;
+                            font-weight: 400;
+                            transition: 0.3s;
+                            &:hover {
+                                opacity: 1;
+                            }
                             span {
-                                font-weight: 700;
+                                font-weight: 400;
                                 font-size: 14px;
                                 line-height: 22px;
                                 color: #fff;
