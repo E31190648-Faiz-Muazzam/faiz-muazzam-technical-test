@@ -784,6 +784,17 @@
             background-color: #171b29;
             box-shadow: 10px 10px 30px rgb(0 0 0 / 30%);
         }
+
+        .site-home .section-home-1 .view-slide .carousel .carousel-indicators {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            top: 105px;
+            left: 65px;
+            right: unset;
+            bottom: unset;
+        }
     }
 }
 

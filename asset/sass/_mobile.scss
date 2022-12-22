@@ -261,15 +261,19 @@
 
                 .carousel {
                     .head-slider {
-                        display: flex;
-                        justify-content: space-between;
                         // align-items: center;
                         margin-bottom: 0px;
-                        padding: 0 32px;
+                        padding: 0px;
                         position: absolute;
                         top: 0;
                         left: 0;
                         right: 0;
+                        .container {
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 20px;
+                            padding: 0 32px;
+                        }
                         // bottom: 0;
                         z-index: 5;
                         .view-controls {
